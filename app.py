@@ -16,8 +16,8 @@ app = Flask(__name__, template_folder="templates", static_folder="static")
 # ----------------Flask-Mail-Configuration----------------
 app.config["MAIL_SERVER"] = "smtp.gmail.com" # This sets the SMTP server for sending emails. In this case, it's set to Gmail's SMTP server.
 app.config["MAIL_PORT"] = 587 # This specifies the port to use for the SMTP server. The default port for TLS encryption is 587.
-app.config["MAIL_USERNAME"] = "chaton.webchat@gmail.com"
-app.config["MAIL_PASSWORD"] = "gasi yaqx oznp tzvd" 
+app.config["MAIL_USERNAME"] = "example@gmail.com"
+app.config["MAIL_PASSWORD"] = "******" 
 app.config["MAIL_USE_TLS"] = True # This enables TLS (Transport Layer Security) for secure communication with the SMTP server. The use of TLS is common for secure email communication.
 app.config["MAIL_USE_SSL"] = False # This disables the use of SSL (Secure Sockets Layer). SSL and TLS are alternative methods for securing communication, and here, you've chosen to use TLS.
 app.config["MAIL_DEBUG"] = True # This enables debugging for the Flask-Mail extension. When set to True, it will print debugging information to the console.
